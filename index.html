@@ -2,10 +2,10 @@
 layout: default
 ---
 
-	{% for post in site.posts %}
-	
-	<h3>{{ post.title }}</h3>
-	
-	<p>{{ post.content }}</p>
-	
-	{% endfor %}
+<h1>{{ site.name | capitalize }}</h1>
+
+{% capture july %}
+	{% include_relative _posts/1776-07-04-fourth.md %}
+{% endcapture %}
+
+{{ july | markdownify }}
