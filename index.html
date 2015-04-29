@@ -5,8 +5,8 @@ layout: default
 <h1>{{ site.name | capitalize }}</h1>
 
 
-{% capture anni %}
+{% capture intro %}
 	{% include_relative _posts/intro.md %}
 {% endcapture %}
 
-{{ anni | markdownify }}
+{{ intro | markdownify }}
