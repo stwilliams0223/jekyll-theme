@@ -10,3 +10,7 @@ layout: default
 {% endcapture %}
 
 {{ intro | markdownify }}
+
+{% capture port %}{% include_relative _posts/name-of-file.md %}{% endcapture %} {{ port | markdownify }}
+
+{% capture about %}{% include_relative _posts/name-of-file.md %}{% endcapture %} {{ about | markdownify }}
