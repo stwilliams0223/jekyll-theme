@@ -72,7 +72,11 @@ layout: default
 								<h2>Portfolio</h2>
 							</header>
 							
-							{% capture port %}{% include_relative _posts/2015-04-24-port.md %}{% endcapture %} {{ port | markdownify }}
+							{% capture port %}
+							{% include_relative _posts/2015-04-24-port.md %}
+							{% endcapture %} 
+							
+							{{ port | markdownify }}
 						
 							<div class="row">
 								<div class="4u">
@@ -117,7 +121,11 @@ layout: default
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 							
-						{% capture about %}{% include_relative _posts/2015-04-24-about.md %}{% endcapture %} {{ about | markdownify }}
+							{% capture about %}
+							{% include_relative _posts/2015-04-24-about.md %}
+							{% endcapture %} 
+							
+							{{ about | markdownify }}
 
 						</div>
 					</section>
